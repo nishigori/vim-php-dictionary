@@ -490,8 +490,6 @@ decoct(int.decimal_number)
 define
 define(string.constant_name)
 define(string.constant_name,mixed.value,case_sensitive=true)
-define_syslog_variables
-define_syslog_variables(void)
 defined
 deg2rad
 deg2rad(float.number)
@@ -991,10 +989,6 @@ get_included_files
 get_included_files(void)
 get_loaded_extensions
 get_loaded_extensions(void)
-get_magic_quotes_gpc
-get_magic_quotes_gpc(void)
-get_magic_quotes_runtime
-get_magic_quotes_runtime(void)
 get_meta_tags
 get_meta_tags(string.filename[,bool.use_include_path])
 get_object_vars
