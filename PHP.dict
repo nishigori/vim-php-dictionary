@@ -119,6 +119,7 @@ chroot(string.directory)
 chunk_split(string.str[,int.chunklen[,string.ending]])
 class_exists(string.classname)
 clearstatcache(void)
+clone
 closedir([resource.dir_handle])
 closelog(void)
 com_addref(int.module)
@@ -137,6 +138,7 @@ confirm_extname_compiled(string.arg)
 connection_aborted(void)
 connection_status(void)
 connection_timeout
+const
 constant(string.const_name)
 convert_cyr_string(string.str,string.from,string.to)
 copy(string.source_file,string.destination_file)
@@ -1821,6 +1823,7 @@ imap_utf7_encode
 imap_utf7_encode(string.buf)
 imap_utf8
 imap_utf8(string.string)
+implements
 implode
 implode(array.src,string.glue)
 import_request_variables
@@ -1874,6 +1877,7 @@ ini_restore
 ini_restore(string.varname)
 ini_set
 ini_set(string.varname,string.newvalue)
+interface
 intval
 intval(mixed.var[,int.base])
 ip2long
@@ -2687,6 +2691,7 @@ mysql_unbuffered_query
 mysql_unbuffered_query(string.query[,int.link_identifier][,int.result_mode])
 
 N
+namespace
 natcasesort
 natcasesort(array.array_arg)
 natsort
