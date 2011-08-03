@@ -2604,8 +2604,6 @@ mysql_create_db(string.database_name[,int.link_identifier])
 mysql_data_seek
 mysql_data_seek(int.result,int.row_number)
 mysql_db_name
-mysql_drop_db
-mysql_drop_db(string.database_name[,int.link_identifier])
 mysql_errno
 mysql_errno([int.link_identifier])
 mysql_error
