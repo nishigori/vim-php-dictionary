@@ -1989,6 +1989,24 @@ join
 join(array.src,string.glue)
 jpeg2wbmp
 jpeg2wbmp.(string.f_org,string.f_dest,int.d_height,int.d_width,int.threshold)
+json_decode
+json_decode(string.json[,bool.assoc=false[,int.depth=512[,int.options=0]]])
+json_encode
+json_encode(mixed.value,[int.options])
+JSON_ERROR_CTRL_CHAR
+JSON_ERROR_DEPTH
+JSON_ERROR_NONE
+JSON_ERROR_STATE_MISMATCH
+JSON_ERROR_SYNTAX
+JSON_ERROR_UTF8
+JSON_FORCE_OBJECT
+JSON_HEX_AMP
+JSON_HEX_APOS
+JSON_HEX_QUOT
+JSON_HEX_TAG
+json_last_error
+json_last_error(void)
+JSON_NUMERIC_CHECK
 juliantojd
 juliantojd(int.month,int.day,int.year)
 
