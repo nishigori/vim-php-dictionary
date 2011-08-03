@@ -2660,6 +2660,7 @@ mysql_pconnect
 mysql_pconnect([string.hostname[:port][:/path/to/socket]][,string.username][,string.password])
 mysql_query
 mysql_query(string.query[,int.link_identifier][,int.result_mode])
+mysql_real_escape_string(string.unescaped_string[,resource.link_identifier])
 mysql_result
 mysql_result(int.result,int.row[,mixed.field])
 mysql_select_db
@@ -4271,6 +4272,7 @@ strcoll
 strcoll(string.str1,string.str2)
 strcspn
 strcspn(string.str,string.mask)
+stream_set_blocking(resource.stream ,int.mode)
 strftime
 strftime(string.format[,int.timestamp])
 strip_tags
@@ -5104,3 +5106,6 @@ zip_open
 zip_open(string.filename)
 zip_read
 zip_read(resource.zip)
+
+$
+$_SESSION
