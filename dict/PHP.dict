@@ -3222,6 +3222,8 @@ openssl_csr_new
 openssl_csr_new(array.dn,resource.&privkey[,array.extraattribs,array.configargs])
 openssl_csr_sign
 openssl_csr_sign(mixed.csr,mixed.x509,mixed.priv_key,long.days)
+openssl_decrypt(string.data,string.method,string.password[,int.options=0[,string.iv=""]])
+openssl_encrypt(string.data,string.method,string.password[,int.options=0[,string.iv=""]])
 openssl_error_string
 openssl_error_string(void)
 openssl_free_key
