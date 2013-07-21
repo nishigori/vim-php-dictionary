@@ -1989,6 +1989,7 @@ join
 join(array.src,string.glue)
 jpeg2wbmp
 jpeg2wbmp.(string.f_org,string.f_dest,int.d_height,int.d_width,int.threshold)
+JSON_BIGINT_AS_STRING
 json_decode
 json_decode(string.json[,bool.assoc=false[,int.depth=512[,int.options=0]]])
 json_encode
@@ -2007,6 +2008,8 @@ JSON_HEX_TAG
 json_last_error
 json_last_error(void)
 JSON_NUMERIC_CHECK
+JSON_PRETTY_PRINT
+JSON_UNESCAPED_SLASHES
 juliantojd
 juliantojd(int.month,int.day,int.year)
 
