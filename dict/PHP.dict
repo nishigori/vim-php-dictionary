@@ -491,6 +491,9 @@ dcngettext
 dcngettext.(string.domain,string.msgid1,string.msgid2,int.n,int.category)
 debugger_off
 debugger_on
+debug_backtrace([int.options=DEBUG_BACKTRACE_PROVIDE_OBJECT[,int.limit=0]])
+DEBUG_BACKTRACE_PROVIDE_OBJECT
+debug_print_backtrace([int.options=0[,int.limit=0]])
 decbin
 decbin(int.decimal_number)
 dechex
