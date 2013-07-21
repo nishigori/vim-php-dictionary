@@ -1898,8 +1898,6 @@ IMG_WEIGHTED4
 implements
 implode
 implode(array.src,string.glue)
-import_request_variables
-import_request_variables(string.types[,string.prefix])
 in_array
 in_array(mixed.needle,array.haystack[,bool.strict])
 include
