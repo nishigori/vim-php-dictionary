@@ -6,15 +6,13 @@ Although of minor significance, it may be useful to someone.
 
 Learn about the use of dictionaries in general and you will - as a PHP programer - be able to use this.
 
-Original plugin that a mirror of http://www.vim.org/scripts/script.php?script_id=534
-
-and forked it
+It's forked original plugin that a mirror of http://www.vim.org/scripts/script.php?script_id=534
 
 What differense to original plugin ?
 ------------------------------------
 
-* This forked project is maintenanced over the PHP version **5.3**
-* Changed directory for install plugin manager ([neobundle.vim][], [vundle][], [vim-pathogen][], ...)
+* It's Maintenanced for the PHP latest version
+* It's be Easy installation using plugin manager ([neobundle.vim][], [vundle][], [vim-pathogen][], ...)
 
 Installation
 ------------
