@@ -3855,9 +3855,6 @@ pg_tty([resource.connection])
 pg_untrace
 pg_untrace([resource.connection])
 php_egg_logo_guid(void)
-php_logo_guid
-php_logo_guid
-php_logo_guid(void)
 PHP_MAXPATHLEN
 PHP_OUTPUT_HANDLER_CLEAN
 PHP_OUTPUT_HANDLER_CLEANABLE
@@ -5271,9 +5268,6 @@ yp_order
 yp_order(string.domain,string.map)
 
 Z
-zend_logo_guid
-zend_logo_guid
-zend_logo_guid(void)
 zend_version
 zend_version
 zend_version(void)
