@@ -70,6 +70,9 @@ bin2hex(string.data)
 bind_textdomain_codeset.(string.domain,string.codeset)
 bindec(string.binary_number)
 bindtextdomain(string.domain_name,string.dir)
+BUS_ADRALN
+BUS_ADRERR
+BUS_OBJERR
 bzclose(resource.bz)
 bzcompress(string.source[,int.blocksize100k[,int.workfactor]])
 bzdecompress(string.source[,int.small])
@@ -116,6 +119,12 @@ chr(int.ascii)
 chroot(string.directory)
 chunk_split(string.str[,int.chunklen[,string.ending]])
 class_exists(string.classname)
+CLD_CONTIUNED
+CLD_DUMPED
+CLD_EXITED
+CLD_KILLED
+CLD_STOPPED
+CLD_TRAPPED
 clearstatcache(void)
 clone
 closedir([resource.dir_handle])
@@ -269,6 +278,7 @@ curl_setopt
 curl_setopt(int.ch,string.option,mixed.value)
 curl_version
 curl_version(void)
+CURLOPT_PROGRESSFUNCTION
 current
 current(array.array_arg)
 cybercash_base64_decode
@@ -610,6 +620,8 @@ dotnet_load
 doubleval
 
 E
+E_DEPRECATED
+E_USER_DEPRECATED
 each
 each(array.arr)
 easter_date
@@ -646,7 +658,7 @@ extension_loaded
 extension_loaded(string.extension_name)
 EXTR_OVERWRITE
 EXTR_PREFIX_ALL
-EXTR_PREFIX_ALL 
+EXTR_PREFIX_ALL
 EXTR_PREFIX_INVALID
 EXTR_PREFIX_SAME
 EXTR_SKIP
@@ -866,6 +878,14 @@ for
 foreach
 fpassthru
 fpassthru(resource.fp)
+FPE_FLTDIV
+FPE_FLTINV
+FPE_FLTOVF
+FPE_FLTRES
+FPE_FLTSUB
+FPE_FLTUND
+FPE_INTDIV
+FPE_INTOVF
 fputs
 fread
 fread(resource.fp,int.length)
@@ -1530,6 +1550,14 @@ iis_start_server(int.ServerInstance)
 iis_stop_server(int.ServerInstance)
 iis_stop_service(string.ServiceId)
 iis_stop_service(string.ServiceId)
+ILL_BADSTK
+ILL_COPROC
+ILL_ILLADR
+ILL_ILLOPC
+ILL_ILLOPN
+ILL_ILLTRP
+ILL_PRVOPC
+ILL_PRVREG
 image2wbmp
 image2wbmp(int.im[,string.filename[,int.threshold]])
 imagealphablending
@@ -1825,6 +1853,7 @@ imap_utf7_encode
 imap_utf7_encode(string.buf)
 imap_utf8
 imap_utf8(string.string)
+IMG_FILTER_PIXELATE
 implements
 implode
 implode(array.src,string.glue)
@@ -1877,6 +1906,8 @@ ini_get_all
 ini_get_all([string.extension])
 ini_restore
 ini_restore(string.varname)
+INI_SCANNER_NORMAL
+INI_SCANNER_RAW
 ini_set
 ini_set(string.varname,string.newvalue)
 interface
@@ -2105,6 +2136,7 @@ ldap_next_entry
 ldap_next_entry(int.link,int.entry)
 ldap_next_reference
 ldap_next_reference(int.link,int.entry)
+LDAP_OPT_NETWORK_TIMEOUT
 ldap_parse_reference
 ldap_parse_reference(int.link,int.entry,array.referrals)
 ldap_parse_result
@@ -2131,6 +2163,7 @@ leak
 leak(int.num_bytes=3)
 levenshtein
 levenshtein(string.str1,string.str2)
+LIBXML_LOADED_VERSION
 link
 link(string.target,string.link)
 linkinfo
@@ -3763,12 +3796,24 @@ php_egg_logo_guid(void)
 php_logo_guid
 php_logo_guid
 php_logo_guid(void)
+PHP_MAXPATHLEN
 php_sapi_name
 php_sapi_name
 php_sapi_name(void)
 php_uname
 php_uname
 php_uname(void)
+PHP_WINDOWS_NT_DOMAIN_CONTROLLER
+PHP_WINDOWS_NT_SERVER
+PHP_WINDOWS_NT_WORKSTATION
+PHP_WINDOWS_VERSION_BUILD
+PHP_WINDOWS_VERSION_MAJOR
+PHP_WINDOWS_VERSION_MINOR
+PHP_WINDOWS_VERSION_PLATFORM
+PHP_WINDOWS_VERSION_PRODUCTTYPE
+PHP_WINDOWS_VERSION_SP_MAJOR
+PHP_WINDOWS_VERSION_SP_MINOR
+PHP_WINDOWS_VERSION_SUITEMASK
 phpcredits
 phpcredits
 phpcredits([int.flag])
@@ -3782,6 +3827,12 @@ pi
 pi(void)
 png2wbmp
 png2wbmp.(string.f_org,string.f_dest,int.d_height,int.d_width,int.threshold)
+POLL_ERR
+POLL_HUP
+POLL_IN
+POLL_MSG
+POLL_OUT
+POLL_PRI
 popen
 popen(string.command,string.mode)
 pos
@@ -3847,6 +3898,7 @@ posix_uname
 posix_uname(void)
 pow
 pow(number.base,number.exponent)
+PREG_BAD_UTF8_OFFSET_ERROR
 preg_grep
 preg_grep(string.regex,array.input)
 preg_match
@@ -4066,6 +4118,8 @@ satellite_object_to_string
 satellite_object_to_string(object.obj)
 SCRIPT_FILENAME
 SCRIPT_NAME
+SEGV_ACCERR
+SEGV_MAPERR
 sem_acquire
 sem_acquire(int.id)
 sem_get
@@ -4172,6 +4226,18 @@ show_source
 show_source
 shuffle
 shuffle(array.array_arg)
+SI_ASYNCIO
+SI_KERNEL
+SI_MESGQ
+SI_NOINFO
+SI_QUEUE
+SI_SIGIO
+SI_TIMER
+SI_TKILL
+SI_USER
+SIG_BLOCK
+SIG_SETMASK
+SIG_UNBLOCK
 similar_text
 similar_text(string.str1,string.str2[,float.percent])
 sin
@@ -4282,7 +4348,7 @@ sort
 sort(array.array_arg[,int.sort_flags])
 SORT_NUMERIC
 SORT_REGULAR
-SORT_STRING 
+SORT_STRING
 soundex
 soundex(string.str)
 sprintf
@@ -4764,6 +4830,8 @@ tmpfile
 tmpfile(void)
 touch
 touch(string.filename[,int.time[,int.atime]])
+TRAP_BRKPT
+TRAP_TRACE
 trigger_error
 trigger_error(string.messsage[,int.error_type])
 trim
@@ -5147,6 +5215,10 @@ zip_open
 zip_open(string.filename)
 zip_read
 zip_read(resource.zip)
+
+_
+__DIR__
+__NAMESPACE__
 
 $
 $_SESSION
