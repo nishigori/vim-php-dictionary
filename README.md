@@ -45,6 +45,12 @@ filetype plugin indent on     " Required
 NeoBundleCheck
 ```
 
+Specified PHP version 5.3
+
+```vim
+NeoBundle 'nishigori/vim-php-dictionary', 'php5.3'
+```
+
 ### Using [vim-pathogen][]
 
 ```sh
