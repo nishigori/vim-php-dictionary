@@ -262,6 +262,8 @@ ctype_upper
 ctype_upper(mixed.c)
 ctype_xdigit
 ctype_xdigit(mixed.c)
+CURLOPT_MAX_RECV_SPEED_LARGE
+CURLOPT_MAX_SEND_SPEED_LARGE
 curl_close
 curl_close(int.ch)
 curl_errno
@@ -633,6 +635,12 @@ echo
 empty
 end
 end(array.array_arg)
+ENT_DISALLOWED
+ENT_HTML401
+ENT_HTML5
+ENT_SUBSTITUTE
+ENT_XML1
+ENT_XHTML
 error_log
 error_log(string.message,int.message_type[,string.destination][,string.extra_headers])
 error_reporting
@@ -1918,10 +1926,18 @@ intval
 intval(mixed.var[,int.base])
 ip2long
 ip2long(string.ip_address)
+IPPROTO_IP
+IPPROTO_IPV6
 iptcembed
 iptcembed(string.iptcdata,string.jpeg_file_name[,int.spool])
 iptcparse
 iptcparse(string.iptcdata)
+IPV6_MULTICAST_HOPS
+IPV6_MULTICAST_IF
+IPV6_MULTICAST_LOOP
+IP_MULTICAST_IF
+IP_MULTICAST_LOOP
+IP_MULTICAST_TTL
 ircg_channel_mode
 ircg_channel_mode(int.connection,string.channel,string.mode_spec,string.nick)
 ircg_disconnect
@@ -2064,6 +2080,7 @@ json_last_error(void)
 JSON_NUMERIC_CHECK
 JSON_PRETTY_PRINT
 JSON_UNESCAPED_SLASHES
+JSON_UNESCAPED_UNICODE
 juliantojd
 juliantojd(int.month,int.day,int.year)
 
@@ -2166,7 +2183,10 @@ leak
 leak(int.num_bytes=3)
 levenshtein
 levenshtein(string.str1,string.str2)
+LIBXML_HTML_NODEFDTD
+LIBXML_HTML_NOIMPLIED
 LIBXML_LOADED_VERSION
+LIBXML_PEDANTIC
 link
 link(string.target,string.link)
 linkinfo
@@ -2366,6 +2386,12 @@ mcal_time_valid
 mcal_time_valid(int.hour,int.min,int.sec)
 mcal_week_of_year
 mcal_week_of_year(int.day,int.month,int.year)
+MCAST_JOIN_GROUP
+MCAST_LEAVE_GROUP
+MCAST_BLOCK_SOURCE
+MCAST_UNBLOCK_SOURCE
+MCAST_JOIN_SOURCE_GROUP
+MCAST_LEAVE_SOURCE_GROUP
 mcrypt_cbc
 mcrypt_cbc(int.cipher,string.key,string.data,int.mode,string.iv)
 mcrypt_cbc(int.cipher,string.key,string.data,int.mode[,string.iv])
@@ -3246,6 +3272,9 @@ opendir
 opendir(string.path)
 openlog
 openlog(string.ident,int.option,int.facility)
+OPENSSL_CIPHER_AES_128_CBC
+OPENSSL_CIPHER_AES_192_CBC
+OPENSSL_CIPHER_AES_256_CBC
 openssl_csr_export
 openssl_csr_export(resource.csr,string.&out[,bool.notext=true])
 openssl_csr_export_to_file
@@ -3288,6 +3317,7 @@ openssl_public_decrypt
 openssl_public_decrypt(string.data,string.crypted,resource.key[,int.padding])
 openssl_public_encrypt
 openssl_public_encrypt(string.data,string.crypted,mixed.key[,int.padding])
+OPENSSL_RAW_DATA
 openssl_seal
 openssl_seal(string.data,&string.sealdata,&array.ekeys,array.pubkeys)
 openssl_sign
@@ -3308,6 +3338,7 @@ openssl_x509_parse
 openssl_x509_parse(mixed.x509[,bool.shortnames=true])
 openssl_x509_read
 openssl_x509_read(mixed.cert)
+OPENSSL_ZERO_PADDING
 ora_bind
 ora_bind(int.cursor,string.php_variable_name,string.sql_parameter_name,int.length[,int.type])
 ora_close
@@ -3796,9 +3827,22 @@ php_logo_guid
 php_logo_guid
 php_logo_guid(void)
 PHP_MAXPATHLEN
+PHP_OUTPUT_HANDLER_CLEAN
+PHP_OUTPUT_HANDLER_CLEANABLE
+PHP_OUTPUT_HANDLER_DISABLED
+PHP_OUTPUT_HANDLER_FINAL
+PHP_OUTPUT_HANDLER_FLUSH
+PHP_OUTPUT_HANDLER_FLUSHABLE
+PHP_OUTPUT_HANDLER_REMOVABLE
+PHP_OUTPUT_HANDLER_STARTED
+PHP_OUTPUT_HANDLER_STDFLAGS
+PHP_OUTPUT_HANDLER_WRITE
 php_sapi_name
 php_sapi_name
 php_sapi_name(void)
+PHP_SESSION_ACTIVE
+PHP_SESSION_DISABLED
+PHP_SESSION_NONE
 php_uname
 php_uname
 php_uname(void)
@@ -4378,6 +4422,12 @@ strcoll
 strcoll(string.str1,string.str2)
 strcspn
 strcspn(string.str,string.mask)
+STREAM_META_ACCESS
+STREAM_META_GROUP
+STREAM_META_GROUP_NAME
+STREAM_META_OWNER
+STREAM_META_OWNER_NAME
+STREAM_META_TOUCH
 stream_set_blocking(resource.stream ,int.mode)
 strftime
 strftime(string.format[,int.timestamp])
@@ -4918,6 +4968,7 @@ utf8_decode
 utf8_decode(string.data)
 utf8_encode
 utf8_encode(string.data)
+U_IDNA_DOMAIN_NAME_TOO_LONG_ERROR
 
 V
 var_dump
@@ -5214,6 +5265,9 @@ zip_open
 zip_open(string.filename)
 zip_read
 zip_read(resource.zip)
+ZLIB_ENCODING_DEFLATE
+ZLIB_ENCODING_GZIP
+ZLIB_ENCODING_RAW
 
 _
 __DIR__
