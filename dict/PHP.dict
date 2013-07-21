@@ -2349,8 +2349,6 @@ mcrypt_generic
 mcrypt_generic(resource.td,string.data)
 mcrypt_generic_deinit
 mcrypt_generic_deinit(resource.td)
-mcrypt_generic_end
-mcrypt_generic_end(resource.td)
 mcrypt_generic_init
 mcrypt_generic_init(resource.td,string.key,string.iv)
 mcrypt_get_block_size
@@ -2665,8 +2663,6 @@ mysql_get_server_info
 mysql_get_server_info([int.link_identifier])
 mysql_insert_id
 mysql_insert_id([int.link_identifier])
-mysql_list_dbs
-mysql_list_dbs([int.link_identifier])
 mysql_list_fields
 mysql_list_fields(string.database_name,string.table_name[,int.link_identifier])
 mysql_list_tables
