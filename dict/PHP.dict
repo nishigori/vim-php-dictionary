@@ -3360,6 +3360,14 @@ openssl_seal
 openssl_seal(string.data,&string.sealdata,&array.ekeys,array.pubkeys)
 openssl_sign
 openssl_sign(string.data,&string.signature,mixed.key)
+openssl_spki_export
+openssl_spki_export(&string.spkac)
+openssl_spki_export_challenge
+openssl_spki_export_challenge(&string.spkac)
+openssl_spki_new
+openssl_spki_new(&resource.privkey,&string.challenge[,int.algorithm])
+openssl_spki_verify
+openssl_spki_verify(&string.spkac)
 openssl_verify
 openssl_verify(string.data,string.signature,mixed.key)
 openssl_x509_check_private_key
