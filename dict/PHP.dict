@@ -3122,6 +3122,8 @@ ob_implicit_flush
 ob_implicit_flush([int.flag])
 ob_start
 ob_start([.string.user_function[,int.chunk_size]])
+oci_get_implicit_resultset
+oci_get_implicit_resultset(resource.statement)
 ocibindbyname
 ocibindbyname(int.stmt,string.name,mixed.&var,int.maxlength[,int.type])
 ocicancel
