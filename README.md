@@ -4,7 +4,7 @@ vim-php-dictionary
 This is not a script, but a building stone for a script.
 Although of minor significance, it may be useful to someone.
 
-Learn about the use of dictionaries in general and you will - as a PHP programer - be able to use this.
+Learn about the use of dictionaries in general and you will - as a PHP programmer - be able to use this.
 
 It's forked original plugin that a mirror of http://www.vim.org/scripts/script.php?script_id=534
 
@@ -43,15 +43,14 @@ filetype plugin indent on     " Required
 NeoBundleCheck
 ```
 
-Specified PHP version 5.4
+Specified PHP version (either one):
 
 ```vim
+" For PHP-5.5
 NeoBundle 'nishigori/vim-php-dictionary', 'php5.4'
-```
-
-Specified PHP version 5.3
-
-```vim
+" For PHP-5.4
+NeoBundle 'nishigori/vim-php-dictionary', 'php5.4'
+" For PHP-5.3
 NeoBundle 'nishigori/vim-php-dictionary', 'php5.3'
 ```
 
@@ -65,4 +64,3 @@ git clone git://github.com/nishigori/vim-php-dictionary.git
 [neobundle.vim]:    https://github.com/Shougo/neobundle.vim
 [vundle]:           https://github.com/gmarik/vundle
 [vim-pathogen]:     https://github.com/tpope/vim-pathogen
-
