@@ -47,7 +47,7 @@ Specified PHP version (either one):
 
 ```vim
 " For PHP-5.5
-NeoBundle 'nishigori/vim-php-dictionary', 'php5.4'
+NeoBundle 'nishigori/vim-php-dictionary', 'php5.5'
 " For PHP-5.4
 NeoBundle 'nishigori/vim-php-dictionary', 'php5.4'
 " For PHP-5.3
