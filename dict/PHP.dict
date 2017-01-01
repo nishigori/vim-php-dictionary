@@ -500,6 +500,10 @@ dechex
 dechex(int.decimal_number)
 decoct
 decoct(int.decimal_number)
+deflate_add
+deflate_add(resource.context,string.data[,int.flush_mode])
+deflate_init
+deflate_init(int.encoding[,array.options])
 define
 define(string.constant_name)
 define(string.constant_name,mixed.value,case_sensitive=true)
@@ -644,6 +648,8 @@ ENT_HTML5
 ENT_SUBSTITUTE
 ENT_XML1
 ENT_XHTML
+error_clear_last
+error_clear_last(void)
 error_log
 error_log(string.message,int.message_type[,string.destination][,string.extra_headers])
 error_reporting
@@ -980,6 +986,8 @@ fwrite(resource.fp,string.str[,int.length])
 
 G
 GATEWAY_INTERFACE
+gc_mem_caches
+gc_mem_caches(void)
 get_browser
 get_browser(string.browser_name)
 get_cfg_var
@@ -1015,6 +1023,8 @@ get_object_vars(object.obj)
 get_parent_class
 get_parent_class(mixed.object)
 get_required_files
+get_resources
+get_resources([string.type])
 get_resource_type
 getallheaders
 getallheaders(void)
@@ -1125,6 +1135,8 @@ gmp_prob_prime
 gmp_prob_prime(resource.a[,int.reps])
 gmp_random
 gmp_random([int.limiter])
+gmp_random_seed
+gmp_random_seed(mixed.seed)
 gmp_scan0
 gmp_scan0(resource.a,int.start)
 gmp_scan1
@@ -1941,6 +1953,10 @@ ingres_query
 ingres_query(string.query[,resource.link])
 ingres_rollback
 ingres_rollback([resource.link])
+inflate_add
+inflate_add(resource.context,string.encoded_data[,int.flush_mode])
+inflate_init
+inflate_init(int.encoding[,array.options])
 ini_alter
 ini_get
 ini_get(string.varname)
@@ -1956,6 +1972,8 @@ interface
 INTL_IDNA_VARIANT_2003
 INTL_IDNA_VARIANT_UTS46
 INTL_MAX_LOCALE_LEN
+intdiv
+intdiv(int.dividend,int.divisor)
 intval
 intval(mixed.var[,int.base])
 ip2long
@@ -3987,6 +4005,8 @@ posix_setgid
 posix_setgid(long.uid)
 posix_setpgid
 posix_setpgid(long.pid,long.pgid)
+posix_setrlimit
+posix_setrlimit(int.resource,int.softlimit,int.hardlimit)
 posix_setsid
 posix_setsid(void)
 posix_setuid
@@ -4012,6 +4032,8 @@ preg_replace
 preg_replace(mixed.regex,mixed.replace,mixed.subject[,int.limit])
 preg_replace_callback
 preg_replace_callback(mixed.regex,mixed.callback,mixed.subject[,int.limit])
+preg_replace_callback_array
+preg_replace_callback_array(array.patterns_and_callbacks,mixed.subject[,int.limit[,int.&$count]])
 preg_split
 preg_split(string.pattern,string.subject[,int.limit[,int.flags]])
 prev
@@ -4136,6 +4158,10 @@ rad2deg
 rad2deg(float.number)
 rand
 rand([int.min,int.max])
+random_bytes
+random_bytes(int.length)
+random_int
+random_int([int.min,int.max])
 range
 range(mixed.low,mixed.high)
 rawurldecode
