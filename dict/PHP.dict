@@ -2229,8 +2229,6 @@ ldap_set_option
 ldap_set_option(int.link,int.option,mixed.newval)
 ldap_set_rebind_proc
 ldap_set_rebind_proc(int.link,string.callback)
-ldap_sort
-ldap_sort(int.link,int.result,string.sortfilter)
 ldap_start_tls
 ldap_start_tls(int.link)
 ldap_t61_to_8859
