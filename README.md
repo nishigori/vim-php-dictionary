@@ -69,8 +69,8 @@ call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.3'})
 ### Using [vim-pathogen][]
 
 ```sh
-cd ~/.vim/bundle
-git clone git://github.com/nishigori/vim-php-dictionary.git
+git clone git://github.com/nishigori/vim-php-dictionary.git ~/.vim/bundle/vim-php-dictionary
+cd ~/.vim/bundle/vim-php-dictionary
 git checkout -b ${PHP_VERSION_U_WANT} origin/${PHP_VERSION_U_WANT}
 ```
 
