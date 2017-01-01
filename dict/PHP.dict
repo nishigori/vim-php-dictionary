@@ -493,13 +493,20 @@ debugger_off
 debugger_on
 debug_backtrace([int.options=DEBUG_BACKTRACE_PROVIDE_OBJECT[,int.limit=0]])
 DEBUG_BACKTRACE_PROVIDE_OBJECT
+debug_print_backtrace
 debug_print_backtrace([int.options=0[,int.limit=0]])
+debug_zval_dump
+debug_zval_dump(mixed.variable)
 decbin
 decbin(int.decimal_number)
 dechex
 dechex(int.decimal_number)
 decoct
 decoct(int.decimal_number)
+deflate_add
+deflate_add(resource.context,string.data[,int.flush_mode])
+deflate_init
+deflate_init(int.encoding[,array.options])
 define
 define(string.constant_name)
 define(string.constant_name,mixed.value,case_sensitive=true)
@@ -529,7 +536,7 @@ dio_write(resource.fd,string.data[,int.len])
 dir
 dir(string.directory)
 dirname
-dirname(string.path)
+dirname(string.path[,int.levels])
 disk_free_space
 disk_free_space(string.path)
 disk_total_space
@@ -644,6 +651,8 @@ ENT_HTML5
 ENT_SUBSTITUTE
 ENT_XML1
 ENT_XHTML
+error_clear_last
+error_clear_last(void)
 error_log
 error_log(string.message,int.message_type[,string.destination][,string.extra_headers])
 error_reporting
@@ -980,6 +989,8 @@ fwrite(resource.fp,string.str[,int.length])
 
 G
 GATEWAY_INTERFACE
+gc_mem_caches
+gc_mem_caches(void)
 get_browser
 get_browser(string.browser_name)
 get_cfg_var
@@ -1015,6 +1026,8 @@ get_object_vars(object.obj)
 get_parent_class
 get_parent_class(mixed.object)
 get_required_files
+get_resources
+get_resources([string.type])
 get_resource_type
 getallheaders
 getallheaders(void)
@@ -1125,6 +1138,8 @@ gmp_prob_prime
 gmp_prob_prime(resource.a[,int.reps])
 gmp_random
 gmp_random([int.limiter])
+gmp_random_seed
+gmp_random_seed(mixed.seed)
 gmp_scan0
 gmp_scan0(resource.a,int.start)
 gmp_scan1
@@ -1897,6 +1912,7 @@ IMG_QUADRATIC
 IMG_SINC
 IMG_TRIANGLE
 IMG_NEAREST_NEIGHBOUR
+IMG_WEBP
 IMG_WEIGHTED4
 implements
 implode
@@ -1941,6 +1957,10 @@ ingres_query
 ingres_query(string.query[,resource.link])
 ingres_rollback
 ingres_rollback([resource.link])
+inflate_add
+inflate_add(resource.context,string.encoded_data[,int.flush_mode])
+inflate_init
+inflate_init(int.encoding[,array.options])
 ini_alter
 ini_get
 ini_get(string.varname)
@@ -1956,6 +1976,8 @@ interface
 INTL_IDNA_VARIANT_2003
 INTL_IDNA_VARIANT_UTS46
 INTL_MAX_LOCALE_LEN
+intdiv
+intdiv(int.dividend,int.divisor)
 intval
 intval(mixed.var[,int.base])
 ip2long
@@ -2207,8 +2229,6 @@ ldap_set_option
 ldap_set_option(int.link,int.option,mixed.newval)
 ldap_set_rebind_proc
 ldap_set_rebind_proc(int.link,string.callback)
-ldap_sort
-ldap_sort(int.link,int.result,string.sortfilter)
 ldap_start_tls
 ldap_start_tls(int.link)
 ldap_t61_to_8859
@@ -2219,6 +2239,7 @@ leak
 leak(int.num_bytes=3)
 levenshtein
 levenshtein(string.str1,string.str2)
+LIBXML_BIGLINES
 LIBXML_HTML_NODEFDTD
 LIBXML_HTML_NOIMPLIED
 LIBXML_LOADED_VERSION
@@ -3884,6 +3905,7 @@ PGSQL_POLLING_OK
 PGSQL_POLLING_READING
 PGSQL_POLLING_WRITING
 php_egg_logo_guid(void)
+PHP_INT_MIN
 PHP_MAXPATHLEN
 PHP_OUTPUT_HANDLER_CLEAN
 PHP_OUTPUT_HANDLER_CLEANABLE
@@ -3979,6 +4001,23 @@ posix_kill
 posix_kill(int.pid,int.sig)
 posix_mkfifo
 posix_mkfifo(void)
+POSIX_RLIMIT_AS
+POSIX_RLIMIT_CORE
+POSIX_RLIMIT_CPU
+POSIX_RLIMIT_DATA
+POSIX_RLIMIT_FSIZE
+POSIX_RLIMIT_LOCKS
+POSIX_RLIMIT_MEMLOCK
+POSIX_RLIMIT_MSGQUEUE
+POSIX_RLIMIT_NICE
+POSIX_RLIMIT_NOFILE
+POSIX_RLIMIT_NPROC
+POSIX_RLIMIT_RSS
+POSIX_RLIMIT_RTPRIO
+POSIX_RLIMIT_RTTIME
+POSIX_RLIMIT_SIGPENDING
+POSIX_RLIMIT_STACK
+POSIX_RLIMIT_INFINITY
 posix_setegid
 posix_setegid(long.uid)
 posix_seteuid
@@ -3987,6 +4026,8 @@ posix_setgid
 posix_setgid(long.uid)
 posix_setpgid
 posix_setpgid(long.pid,long.pgid)
+posix_setrlimit
+posix_setrlimit(int.resource,int.softlimit,int.hardlimit)
 posix_setsid
 posix_setsid(void)
 posix_setuid
@@ -4002,6 +4043,7 @@ pow(number.base,number.exponent)
 PREG_BAD_UTF8_OFFSET_ERROR
 preg_grep
 preg_grep(string.regex,array.input)
+PREG_JIT_STACKLIMIT_ERROR
 preg_match
 preg_match(string.pattern,string.subject[,array.subpatterns])
 preg_match_all
@@ -4012,6 +4054,8 @@ preg_replace
 preg_replace(mixed.regex,mixed.replace,mixed.subject[,int.limit])
 preg_replace_callback
 preg_replace_callback(mixed.regex,mixed.callback,mixed.subject[,int.limit])
+preg_replace_callback_array
+preg_replace_callback_array(array.patterns_and_callbacks,mixed.subject[,int.limit[,int.&$count]])
 preg_split
 preg_split(string.pattern,string.subject[,int.limit[,int.flags]])
 prev
@@ -4136,6 +4180,10 @@ rad2deg
 rad2deg(float.number)
 rand
 rand([int.min,int.max])
+random_bytes
+random_bytes(int.length)
+random_int
+random_int([int.min,int.max])
 range
 range(mixed.low,mixed.high)
 rawurldecode
@@ -4294,7 +4342,7 @@ set_time_limit(int.seconds)
 setcookie
 setcookie(string.name[,string.value[,int.expires[,string.path[,string.domain[,bool.secure]]]]])
 setlocale
-setlocale(mixed.category,string.locale)
+setlocale(int.category,array.locale)
 settype
 settype(mixed.var,string.type)
 shell_exec
@@ -5328,9 +5376,20 @@ zip_open
 zip_open(string.filename)
 zip_read
 zip_read(resource.zip)
+ZLIB_BLOCK
+ZLIB_DEFAULT_STRATEGY
 ZLIB_ENCODING_DEFLATE
 ZLIB_ENCODING_GZIP
 ZLIB_ENCODING_RAW
+ZLIB_FILTERED
+ZLIB_FINISH
+ZLIB_FIXED
+ZLIB_FULL_FLUSH
+ZLIB_HUFFMAN_ONLY
+ZLIB_NO_FLUSH
+ZLIB_PARTIAL_FLUSH
+ZLIB_RLE
+ZLIB_SYNC_FLUSH
 
 _
 __DIR__
