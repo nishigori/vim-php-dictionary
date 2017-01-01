@@ -4,55 +4,76 @@ vim-php-dictionary
 This is not a script, but a building stone for a script.
 Although of minor significance, it may be useful to someone.
 
-Learn about the use of dictionaries in general and you will - as a PHP programer - be able to use this.
+Learn about the use of dictionaries in general and you will - as a PHP programmer - be able to use this.
 
-Original plugin that a mirror of http://www.vim.org/scripts/script.php?script_id=534
-
-and forked it
+It's forked original plugin that a mirror of http://www.vim.org/scripts/script.php?script_id=534
 
 What differense to original plugin ?
 ------------------------------------
 
-* This forked project is maintenanced over the PHP version **5.3**
-* Changed directory for install plugin manager ([neobundle.vim][], [vundle][], [vim-pathogen][], ...)
+* It's Maintenanced for the PHP latest version
+* It's be Easy installation using plugin manager ([dein.vim][], [vundle][], [vim-pathogen][], ...)
 
 Installation
 ------------
 
-### Using [neobundle.vim][]
+### Using [dein.vim][]
 
 for master as PHP latest Version
 
 ```vim
-set nocompatible               " Be iMproved
-if has('vim_starting')
-   set runtimepath+=~/.vim/bundle/neobundle.vim/
+" Prepare Instalattion:
+"   1. curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+"   1. sh ./installer.sh {specify the installation directory}
+
+" Edit your .vimrc like this.
+if &compatible
+  set nocompatible
+endif
+set runtimepath+={path to dein.vim directory}
+
+if dein#load_state({path to plugin base path directory})
+  call dein#begin({path to plugin base path directory})
+
+  call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php'})
+  ...
+
+  call dein#end()
+  call dein#save_state()
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+filetype plugin indent on
+syntax enable
 
-" Let NeoBundle manage NeoBundle
-NeoBundleFetch 'Shougo/neobundle.vim'
+" Open vim and install dein
+" :call dein#install()
+```
 
+Specified PHP version (either one):
 
-" Declare the vim-php-dictionary
-NeoBundle 'nishigori/vim-php-dictionary'
-
-
-filetype plugin indent on     " Required
-
-" Installation check.
-NeoBundleCheck
+```vim
+" For PHP-7.1
+call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php7.1'})
+" For PHP-7.0
+call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php7.0'})
+" For PHP-5.6
+call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.6'})
+" For PHP-5.5
+call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.5'})
+" For PHP-5.4
+call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.4'})
+" For PHP-5.3
+call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.3'})
 ```
 
 ### Using [vim-pathogen][]
 
 ```sh
-cd ~/.vim/bundle
-git clone git://github.com/nishigori/vim-php-dictionary.git
+git clone git://github.com/nishigori/vim-php-dictionary.git ~/.vim/bundle/vim-php-dictionary
+cd ~/.vim/bundle/vim-php-dictionary
+git checkout -b ${PHP_VERSION_U_WANT} origin/${PHP_VERSION_U_WANT}
 ```
 
-[neobundle.vim]:    https://github.com/Shougo/neobundle.vim
+[dein.vim]:         https://github.com/Shougo/dein.vim
 [vundle]:           https://github.com/gmarik/vundle
 [vim-pathogen]:     https://github.com/tpope/vim-pathogen
-
