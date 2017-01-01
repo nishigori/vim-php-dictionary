@@ -493,7 +493,10 @@ debugger_off
 debugger_on
 debug_backtrace([int.options=DEBUG_BACKTRACE_PROVIDE_OBJECT[,int.limit=0]])
 DEBUG_BACKTRACE_PROVIDE_OBJECT
+debug_print_backtrace
 debug_print_backtrace([int.options=0[,int.limit=0]])
+debug_zval_dump
+debug_zval_dump(mixed.variable)
 decbin
 decbin(int.decimal_number)
 dechex
@@ -533,7 +536,7 @@ dio_write(resource.fd,string.data[,int.len])
 dir
 dir(string.directory)
 dirname
-dirname(string.path)
+dirname(string.path[,int.levels])
 disk_free_space
 disk_free_space(string.path)
 disk_total_space
@@ -4320,7 +4323,7 @@ set_time_limit(int.seconds)
 setcookie
 setcookie(string.name[,string.value[,int.expires[,string.path[,string.domain[,bool.secure]]]]])
 setlocale
-setlocale(mixed.category,string.locale)
+setlocale(int.category,array.locale)
 settype
 settype(mixed.var,string.type)
 shell_exec
