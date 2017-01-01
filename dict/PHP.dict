@@ -276,8 +276,14 @@ curl_getinfo
 curl_getinfo(int.ch,int.opt)
 curl_init
 curl_init([string.url])
+curl_multi_errno
+curl_multi_errno(resource.mh)
 curl_setopt
 curl_setopt(int.ch,string.option,mixed.value)
+curl_share_errno
+curl_share_errno(resource.rh)
+curl_share_strerror
+curl_share_strerror(int.errno)
 curl_version
 curl_version(void)
 CURLOPT_PROGRESSFUNCTION
@@ -2062,6 +2068,8 @@ is_infinite(double.val)
 is_int
 is_integer
 is_integer
+is_iterable
+is_iterable(mixed.iterable)
 is_link
 is_link(string.filename)
 is_long
@@ -3522,6 +3530,8 @@ patternmodifiers
 patternsyntax
 pclose
 pclose(resource.fp)
+pcntl_async_signals
+pcntl_async_signals(bool.on_off)
 pcntl_exec(string.path[,array.args[,array.envs]])
 pcntl_fork(void)
 pcntl_signal(long.signo,mixed.handle)
