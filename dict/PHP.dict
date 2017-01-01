@@ -4433,6 +4433,8 @@ substr_count
 substr_count(string.haystack,string.needle)
 substr_replace
 substr_replace(string.str,string.repl,int.start[,int.length])
+svn_fs_change_node_prop
+svn_fs_change_node_prop(resource.root,string.path,string.name,string.value)
 swf_actiongeturl
 swf_actiongeturl(string.url,string.target)
 swf_actiongotoframe

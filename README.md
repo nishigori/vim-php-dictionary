@@ -35,7 +35,7 @@ set runtimepath+={path to dein.vim directory}
 if dein#load_state({path to plugin base path directory})
   call dein#begin({path to plugin base path directory})
 
-  call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php'})
+  call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php6.0'})
   ...
 
   call dein#end()
@@ -52,18 +52,8 @@ syntax enable
 Specified PHP version (either one):
 
 ```vim
-" For PHP-7.1
-call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php7.1'})
-" For PHP-7.0
-call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php7.0'})
-" For PHP-5.6
-call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.6'})
-" For PHP-5.5
-call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.5'})
-" For PHP-5.4
-call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.4'})
-" For PHP-5.3
-call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.3'})
+" For PHP-6.0
+call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php6.0'})
 ```
 
 ### Using [vim-pathogen][]
@@ -71,7 +61,7 @@ call dein#add('nishigori/vim-php-dictionary', {'on_ft': 'php', 'rev': 'php5.3'})
 ```sh
 git clone git://github.com/nishigori/vim-php-dictionary.git ~/.vim/bundle/vim-php-dictionary
 cd ~/.vim/bundle/vim-php-dictionary
-git checkout -b ${PHP_VERSION_U_WANT} origin/${PHP_VERSION_U_WANT}
+git checkout -b php6.0 origin/php6.0
 ```
 
 [dein.vim]:         https://github.com/Shougo/dein.vim
