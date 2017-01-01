@@ -1023,6 +1023,8 @@ get_defined_vars
 get_defined_vars(void)
 get_extension_funcs
 get_extension_funcs(string.extension_name)
+get_headers
+get_headers(string.url[,int.format])
 get_html_translation_table
 get_html_translation_table([int.table[,int.quote_style]])
 get_included_files
@@ -1046,7 +1048,7 @@ getcwd(void)
 getdate
 getdate([int.timestamp])
 getenv
-getenv(string.varname)
+getenv([string.varname])
 gethostbyaddr
 gethostbyaddr(string.ip_address)
 gethostbyname
@@ -1067,6 +1069,8 @@ getmypid
 getmypid(void)
 getmyuid
 getmyuid(void)
+getopt
+getopt(string.options[,array.longopts])
 getprotobyname
 getprotobyname(string.name)
 getprotobynumber
@@ -2298,7 +2302,7 @@ log10(float.number)
 log1p
 log1p(float.number)
 long2ip
-long2ip(int.proper_address)
+long2ip(string.proper_address)
 lstat
 lstat(string.filename)
 ltrim
@@ -3852,6 +3856,8 @@ pg_escape_bytea(string.data)
 pg_escape_string
 pg_escape_string(string.data)
 pg_exec
+pg_fetch_all
+pg_fetch_all([int.result_type])
 pg_fetch_array
 pg_fetch_array(resource.result,[int.row[,int.result_type]])
 pg_fetch_object
@@ -3924,6 +3930,8 @@ pg_result_status
 pg_result_status(resource.result)
 pg_send_query
 pg_send_query(resource.connection,string.qeury)
+pg_select
+pg_select(resource.connection,string.table_name,array.assoc_array[,int.options])
 pg_set_client_encoding
 pg_set_client_encoding([resource.connection,].string.encoding)
 pg_trace
